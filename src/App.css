@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes img_zoomOut {
+  0%   {
+    transform: scale(100%);
+  }
+  100% {
+    transform: scale(120%) translateX(50px);
+  }
+}
+.img_zoomUp{
+  animation-name: img_zoomOut;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes buttonzoomx {
+  0%   {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(120%);
+  }
+}
+.buttonzoomx{
+  animation-name: buttonzoomx;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+  animation-timing-function: ease-out;
+}
+
+.normal {
+  @apply h-16;
+}
+
+.scrolled {
+  @apply h-8;
+}
